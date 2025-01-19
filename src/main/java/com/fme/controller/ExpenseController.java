@@ -34,6 +34,7 @@ public class ExpenseController {
 
     @PostMapping
     public Expense createExpense(@RequestBody Expense expense) {
+
         
         return expenseService.save(expense);
     }
